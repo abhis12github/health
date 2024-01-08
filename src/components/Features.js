@@ -1,6 +1,6 @@
 import React from "react";
 import doctor from "../images/vecteezy_afro-female-professional-doctor_14175079-removebg.png";
-import styles from "../styles/Features.module.css";
+// import styles from "../styles/Features.module.css";
 import Card from "./Card";
 
 function Features(){
@@ -9,10 +9,10 @@ function Features(){
         console.log("clicked");
     }
     return (
-    <div className="h-[100vh] w-[100%]">
-    <div className={styles.feature}>
-    <h2 className="text-center font-medium text-xl p-4 text-[#2aacb0]">Our Services</h2>
-        <div className="flex h-[85vh] justify-between">
+    <div className="w-[100%]">
+    {/* <div className={styles.feature}> */}
+    {/* <h2 className="text-center font-medium text-xl p-4 text-[#2aacb0]">Our Services</h2> */}
+        <div className="flex h-[50vh] justify-between">
             <div className="h-[100%] w-[35%] flex justify-center pr-2">
                 <img src={doctor} className="w-[80%]"></img>
             </div>
@@ -24,7 +24,7 @@ function Features(){
             </div>
         </div>
 
-    </div>
+    {/* </div> */}
         
 
     </div>

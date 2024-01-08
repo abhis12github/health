@@ -1,4 +1,0 @@
-.feature{
-    background: -webkit-linear-gradient(bottom, #9DD8F8 0%,#9DD8F8 50%,#ffffff 50%,#ffffff 100%);
-    @apply h-[100%] w-[100%] flex flex-col items-center;
-}
