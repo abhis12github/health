@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
+import Medial from "../images/medical-logo.jpeg"
 
 function Navbar() {
  const [isOpen, setIsOpen] = useState(false);
 
  return (
-   <nav className="flex items-center justify-between flex-wrap pt-2 lg:p-2 bg-[#58B8E1] h-[10vh] w-[100%]">
-     <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
-      <h4 className="text-[#19494a] font-semibold ml-4">Medial</h4>
+   <nav className="flex items-center justify-between flex-wrap  lg:p-2 bg-[#fff] h-[8vh] w-[100%]">
+    
+    
+    
+     
+     <div className="flex items-center flex-shrink-0 text-white mr-12 lg:mr-72">
+     <img src={Medial}className="h-[7vh]"></img>
+     
+      <h4 className="font-sans text-2xl text-blue-500">Medial</h4>
      </div>
      <div className="block lg:hidden">
        <button
@@ -32,22 +39,33 @@ function Navbar() {
      <div
        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
      >
-       <div className="text-md lg:flex-grow bg-[#58B8E1]">
-         <a href="#" className="block pt-1 lg:inline-block lg:mt-0 text-white-200 lg:mr-4">
-           First Link
+       <div className="text-md lg:flex-grow bg-white font-serif ">
+         <a href="#" className="block pt-1 lg:inline-block lg:mt-0 text-white-200 lg:mr-4 p-2 hover:bg-[rgb(6,182,212)] rounded-xl px-2">
+           Home
          </a>
-         <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 lg:mr-4">
-           Second Link
+         <a href="./women.js" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 lg:mr-4 p-2 hover:bg-[rgb(6,182,212)] rounded-xl px-2">
+           Women
          </a>
-         <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 lg:mr-4">
-           Third Link
+         <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 lg:mr-4 p-2 hover:bg-[rgb(6,182,212)] rounded-xl px-2">
+           Doctors
          </a>
-         <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 lg:mr-4">
-           Fourth Link
+         <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 lg:mr-4 p-2 hover:bg-[rgb(6,182,212)] rounded-xl px-2">
+           others
          </a>
        </div>
        
      </div>
+     <div className="font-semibold text-l pr-2 p-2 bg-[rgb(156,163,175)] shadow-3xl  hover:bg-[rgb(6,182,212)] px-1 mx-2 rounded-md ">
+     <button>Log in</button>
+            
+       </div>
+        <div className="font-semibold text-l pr-2 p-2 bg-[rgb(156,163,175)] shadow-3xl hover:bg-[rgb(6,182,212)] px-1 mx-4 rounded-md">
+
+         <button>Sign Up</button>
+            </div>
+
+       
+
    </nav>
  );
 }
